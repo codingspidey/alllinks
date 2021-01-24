@@ -32,6 +32,7 @@ a, a:hover {
   background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
   display: flex;
   background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+  
 }
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -49,6 +50,11 @@ a, a:hover {
   border-radius: 12px;
   max-width: 700px;
   position: relative;
+  background: rgba( 255, 255, 255, 0.10 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.0px );
+-webkit-backdrop-filter: blur( 4.0px );
+border-radius: 10px;
 }
 .profile-card.active .profile-card__cnt {
   filter: blur(6px);
@@ -97,13 +103,13 @@ a, a:hover {
 .profile-card__name {
   font-weight: 700;
   font-size: 24px;
-  color: #6944ff;
+  color: #000000;
   margin-bottom: 15px;
 }
 .profile-card__txt {
   font-size: 18px;
   font-weight: 500;
-  color: #324e63;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 .profile-card__txt strong {
@@ -113,6 +119,7 @@ a, a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 600;
 }
